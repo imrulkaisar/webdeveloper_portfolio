@@ -201,10 +201,13 @@ section.skills p {
 }
 
 /* Resume section styles */
+.resume-section {
+  text-align: center;
+}
 .resume-section .resume-set {
   display: flex;
   justify-content: space-between;
-  padding-top: 90px;
+  padding: 90px 0 60px;
 }
 .resume-section .column {
   flex-basis: min(100%, 550px);
