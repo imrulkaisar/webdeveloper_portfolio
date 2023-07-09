@@ -29,6 +29,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+section {
+  margin: 120px 0;
+}
 .button {
   padding: 18px 35px;
   border-radius: 5px;
@@ -142,7 +145,6 @@ header .container {
 section.about {
   background-color: var(--bg-color);
   padding: 150px;
-  margin: 90px 0;
   border-radius: 5px;
 }
 .about p {
@@ -165,6 +167,38 @@ section.about {
 }
 
 /* Skills section styles */
+section.skills p {
+  text-align: center;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.skills .skill-set {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+.skill-set .skill {
+  flex-basis: 250px;
+  padding: 30px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.skill .icon {
+  width: 44px;
+  aspect-ratio: 1;
+}
+.skill .title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.skill .description {
+  font-size: 16px;
+  line-height: 1.6;
+}
 
 /* Resume section styles */
 
