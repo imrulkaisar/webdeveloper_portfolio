@@ -66,6 +66,12 @@ section {
   color: var(--secondary-color);
   text-align: center;
 }
+.column-title {
+  color: var(--secondary-color);
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
 
 /* Header Styles */
 header {
@@ -208,17 +214,12 @@ section.skills p {
   display: flex;
   justify-content: space-between;
   padding: 90px 0 60px;
+  text-align: left;
 }
 .resume-section .column {
   flex-basis: min(100%, 550px);
 }
 
-.resume-section .column-title {
-  color: var(--secondary-color);
-  font-size: 24px;
-  font-weight: 700;
-  margin: 0 0 30px 0;
-}
 .resume-section .resume {
   max-width: 90%;
 }
@@ -238,3 +239,44 @@ section.skills p {
 }
 
 /* Footer styles */
+footer {
+  padding: 120px;
+  background-color: var(--bg-color);
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .column {
+  flex-basis: min(100%, 500px);
+}
+footer .description {
+  font-size: 16px;
+  line-height: 1.6;
+  padding-bottom: 20px;
+}
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.contact-form input:not(input[type="submit"]),
+.contact-form textarea {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+}
+.contact-form ::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: var(--text-color);
+}
+.contact-form ::-webkit-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: var(--text-color);
+}
