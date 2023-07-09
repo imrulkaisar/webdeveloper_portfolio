@@ -4,6 +4,7 @@
   --secondary-color: #181818;
   --text-color: #757575;
   --bg-color: #FFF8F3;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -80,7 +81,7 @@ header {
   background-color: var(--bg-color);
   background-image: url("images/hardy.png"), url("images/header_bg.png"), url("images/developer.png");
   background-repeat: no-repeat;
-  background-position: bottom right, bottom right, center left;
+  background-position: bottom right, bottom right, 20px;
   background-size: auto, auto, auto 90%;
 }
 header .container {
