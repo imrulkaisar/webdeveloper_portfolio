@@ -10,7 +10,7 @@
 }
 
 body {
-  margin; 0;
+  margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -32,18 +32,45 @@ a {
   border-radius: 5px;
   font-size: 20px;
   font-weight: 700;
+  transition: 0.5s;
 }
 .button-primary {
   background-color: var(--primary-color);
   color: #fff;
+  border: 1px solid var(--primary-color);
+}
+.button-primary:hover {
+  background-color: transparent;
+  color: var(--primary-color);
 }
 .button-secondary {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.button-secondary:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
 
+.button svg {
+  vertical-align: -5px;
 }
 
 /* Header Styles */
 header {
-  padding-top: 30px;
+  padding: 30px 0 200px;
+  height: max(100vh, 700px);
+  background-color: #FFF8F3;
+  background-image: url("images/hardy.png"), url("images/header_bg.png"), url("images/developer.png");
+  background-repeat: no-repeat;
+  background-position: bottom right, bottom right, center left;
+  background-size: auto, auto, auto 90%;
+}
+header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 .navbar {
   display: flex;
@@ -51,7 +78,7 @@ header {
   align-items: center;
 }
 #logo {
-  font-size: 45px;
+  font-size: 56px;
   font-weight: 800;
   color: var(--secondary-color);
 }
@@ -72,6 +99,34 @@ header {
   padding: 18px;
   font-size: 20px;
   font-weight: 400;
+}
+.header-content {
+  width: min(100%, 600px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.header-content .welcome {
+  font-size: 45px;
+  font-weight: 600;
+  margin: 0;
+}
+.header-content .name {
+  margin: 0;
+  font-size: 85px;
+  font-weight: 700;
+}
+.header-content .description {
+  margin: 0;
+  font-size: 18px;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+.header-content .buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 /* About section styles */
